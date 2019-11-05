@@ -7,21 +7,21 @@
 
 # CODE
 #### 1.WRITE A PROGRAM FOR ADDITION OF TWO NUMBERS.
-#include<stdio.h>
-int main()
-{
-int a,b,c;
-printf("enter any two integral numbers : ");
-scanf("%d %d",&a,&b);
-c = a + b;
-printf("the sum of two numbers is %d\n",c);
-return 0;
-}
+#include<stdio.h>  
+int main()  
+{  
+int a,b,c;  
+printf("enter any two integral numbers : ");  
+scanf("%d %d",&a,&b);  
+c = a + b;  
+printf("the sum of two numbers is %d\n",c);  
+return 0;  
+}  
 
-#### OUTPUT:
-enter any two integral numbers : 100
-120
-the sum of two numbers is 220
+#### OUTPUT:  
+enter any two integral numbers : 100  
+120  
+the sum of two numbers is 220  
 
 #### 2.WRITE A PROGRAM TO FIND THE AVERAGE OF n NUMBERS.
 #include<stdio.h>
