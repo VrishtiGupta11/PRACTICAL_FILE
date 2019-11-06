@@ -117,7 +117,7 @@ printf("        TABLE of %d     \n",n);
 printf("        ==========      \n");  
 for(i = 1;i <=10;i = i+1)  
 {  
-printf("%d X %d = %d    %d X %d = %d\n",n,i,n*i,n,10 + i,n*(10 + i));  
+printf("%d X %d = %d  &nbsp;  %d X %d = %d\n",n,i,n*i,n,10 + i,n*(10 + i));  
 
 }  
 return 0;  
@@ -149,7 +149,7 @@ temp = a;
 while (temp>0)  
 {  
 r = temp%10;  
-sum = sum + (r*r*r);  
+sum = sum + (r*Xr*Xr);  
 temp = temp/10;  
 }  
 if(a == sum)  
@@ -675,3 +675,4 @@ enter denominator of the fraction1 : 2
 enter numerator of the fraction2 : 5  
 enter denominator of the fraction2 : 3  
 resultant fraction : 20/6  
+ _X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_ 
