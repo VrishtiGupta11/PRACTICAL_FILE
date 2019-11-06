@@ -149,7 +149,7 @@ temp = a;
 while (temp>0)  
 {  
 r = temp%10;  
-sum = sum + (r*Xr*Xr);  
+sum = sum + (r* Xr* Xr);  
 temp = temp/10;  
 }  
 if(a == sum)  
