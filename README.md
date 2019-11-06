@@ -247,39 +247,45 @@ array elements after sorting
 #include<stdio.h>  
 int main()  
 {  
-int a[25],i,m,n,first=0,last,mid;  
-  
-printf("Enter the size of the array : ");  
-scanf("%d",&m);  
-printf("Enter %d elements in ascending order: ");  
-for(i=0 ; i<m ; i++)  
-scanf("%d",&a[i]);  
-  
-printf("Enter value to find: ");  
+int n,i,a[n],search,mid,first,last;  
+printf("enter number of elements to be entered : ");  
 scanf("%d",&n);  
-  
-last=n-1;    //To initialise to last index position  
-mid=(first+last)/2;  
-while(first<=last)  
+printf("enter the elements in ascending order : ");  
+for(i=0;i<n;i++)  
 {  
-if(a[mid]<n)  
-first=mid+1;  
-else if(a[mid]==n)  
-{  
-printf("%d found at position #%d.\n");    //mid+1 done to display location & not index position  
-break;  
+scanf("%d",&a[i]);  
 }  
+printf("enter the element to be searched : ");  
+scanf("%d",&search);  
+first = 0;  
+last = n-1;  
+mid = (first + last)/2;  
+  
+while(a[mid] != search)  
+{  
+if(a[mid] > search)  
+last = mid -1;  
+
 else  
-last=mid-1;  
-  
-mid=(first+last)/2;  
+first = mid + 1;  
+
+mid = (first + last)/2;  
 }  
-  
-if(first>last)  
-printf("%d not found in the entered array!\n",n);    //Test expression turned false, which means desired element wasn't found  
+if(a[mid] == search)  
+printf("search is successful at position %d\n",mid);  
   
 return 0;  
 }  
+  
+#### OUTPUT:  
+enter number of elements to be entered : 5  
+enter the elements in ascending order : 1  
+2  
+3  
+4  
+5  
+enter the element to be searched : 4  
+search is successful at position 3  
   
 #### 10.WRITE A PROGRAM TO FIND THE FACTORIAL OF THE NUMBER.  
 #include<stdio.h>  
@@ -444,7 +450,33 @@ enter any year : 2000
 2000 is leap year  
   
 #### 17.WRITE A PROGRAM FOR LINEAR SEARCH.  
-  
+#include<stdio.h>
+int main()
+{
+int i,m,a[25],n;
+
+printf("Enter the length of array: ");
+scanf("%d",&m);
+printf("Enter %d elements: ",m);
+for(i=0;i<m;i++)
+scanf("%d",&a[i]);
+printf("Enter the number you wish to find: ");
+scanf("%d",&n);
+
+for(i=0;i<m;i++)
+{
+if(a[i]==n)
+{
+printf("Search is successful. Element present at #%d\n",i+1);    //i+1 done to display location & not index position
+break;
+}
+}
+if(i==m)
+printf("Search is unsuccessful.\n");    //Test expression turned false, which means desired element wasn't found
+
+return 0;
+
+}
 
 #### OUTPUT:  
 
