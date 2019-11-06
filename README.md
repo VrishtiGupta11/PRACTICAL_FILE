@@ -149,7 +149,7 @@ temp = a;
 while (temp>0)  
 {  
 r = temp%10;  
-sum = sum + (r* Xr* Xr);  
+sum = sum + (r* r* r);  
 temp = temp/10;  
 }  
 if(a == sum)  
@@ -173,7 +173,7 @@ int main()
 {  
 puts(" _______________ ");  
 puts("| _______________ |");  
-puts("| &nbsp; 1 &nbsp; |&nbsp;2&nbsp;|&nbsp;3&nbsp;|&nbsp;&nbsp;&nbsp;|");  
+puts("|&nbsp; 1 &nbsp;|&nbsp;2&nbsp;|&nbsp;3&nbsp;|&nbsp;&nbsp;&nbsp;|");  
 puts("| ___ | ___ | ___ |&nbsp;&nbsp;&nbsp;|");  
 puts("|&nbsp;4&nbsp;|&nbsp;5&nbsp;|&nbsp;6&nbsp;|&nbsp;+&nbsp;|");  
 puts("| ___ | ___ | ___ | ___ |");  
