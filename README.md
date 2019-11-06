@@ -395,283 +395,283 @@ enter any three numbers : 12
 10  
 largest of three numbers is : 22  
   
-#### 15.WRITE A PROGRAM TO FIND GCD OF NUMBERS.
-#include<stdio.h>
-int main()
-{
-int x,y;
-printf("enter first integral number : ");
-scanf("%d",&x);
-printf("enter second integral number : ");
-scanf("%d",&y);
-if(y%x == 0)
-printf("gcd is %d\n",x);
-else
-{
-while(y%x != 0)
-{
-x = y%x;
-y = x;
-}
-printf("gcd is %d\n",x);
-}
-}
-
-#### OUTPUT:
-enter first integral number : 12
-enter second integral number : 16
-gcd is 4
-
-#### 16.WRITE A PROGRAM TO FIND WHETHER THE YEAR IS A LEAP YEAR OR NOT.
-#include <stdio.h>
-int main()
-{
-int i;
-printf("enter any year : ");
-scanf("%d",&i);
-if (i%400 == 0)
-{
-printf("%d is leap year\n",i);
-}
-else 
-printf("%d is not leap year\n",i);
-return 0;
-}
-
-#### OUTPUT:
-enter any year : 2000
-2000 is leap year
-
-#### 17.WRITE A PROGRAM FOR LINEAR SEARCH.
-
-
-#### OUTPUT:
-
-
-#### 18.WRITE A PROGRAM FOR MATRIX ADDITION.
-#include<stdio.h>
-int main()
-{
-int a[10][10],b[10][10],c[10][10],n,m,i,j;
-printf("enter the size of the matrix : ");
-scanf("%d %d",&m,&n);
-
-printf("enter the elements of matrix A : ");
-for (i=0;i<n;i++)
-{
-for(j = 0;j<m;j++)
-{
-scanf("%d",&a[i][j]);
-}
-}
-
-printf("enter the elements of matrix B : ");
-for(i = 0;i<n;i++)
-{
-for(j=0;j<m;j++)
-{
-scanf("%d",&b[i][j]);
-}
-}
-
-for(i = 0;i<n;i++)
-{
-for(j= 0;j<m;j++)
-{
-c[i][j] = a[i][j] + b[i][j];
-printf("%d\n",c[i][j]);
-}
-}
-return 0;
-}
-
-#### OUTPUT:
-enter the size of the matrix : 3
-2
-enter the elements of matrix A : 1
-2
-3
-4
-5
-6
-enter the elements of matrix B : 1
-2                               
-3
-4
-5
-6
+#### 15.WRITE A PROGRAM TO FIND GCD OF NUMBERS.  
+#include<stdio.h>  
+int main()  
+{  
+int x,y;  
+printf("enter first integral number : ");  
+scanf("%d",&x);  
+printf("enter second integral number : ");  
+scanf("%d",&y);  
+if(y%x == 0)  
+printf("gcd is %d\n",x);  
+else  
+{  
+while(y%x != 0)  
+{  
+x = y%x;  
+y = x;  
+}  
+printf("gcd is %d\n",x);  
+}  
+}  
   
-2
+#### OUTPUT:  
+enter first integral number : 12  
+enter second integral number : 16  
+gcd is 4  
+  
+#### 16.WRITE A PROGRAM TO FIND WHETHER THE YEAR IS A LEAP YEAR OR NOT.  
+#include <stdio.h>  
+int main()  
+{  
+int i;  
+printf("enter any year : ");  
+scanf("%d",&i);  
+if (i%400 == 0)  
+{  
+printf("%d is leap year\n",i);  
+}  
+else   
+printf("%d is not leap year\n",i);  
+return 0;  
+}  
+  
+#### OUTPUT:  
+enter any year : 2000  
+2000 is leap year  
+  
+#### 17.WRITE A PROGRAM FOR LINEAR SEARCH.  
+  
 
-4
+#### OUTPUT:  
 
-6
 
-8
+#### 18.WRITE A PROGRAM FOR MATRIX ADDITION.  
+#include<stdio.h>  
+int main()  
+{  
+int a[10][10],b[10][10],c[10][10],n,m,i,j;  
+printf("enter the size of the matrix : ");  
+scanf("%d %d",&m,&n);  
+  
+printf("enter the elements of matrix A : ");  
+for (i=0;i<n;i++)  
+{  
+for(j = 0;j<m;j++)  
+{  
+scanf("%d",&a[i][j]);  
+}  
+}  
+  
+printf("enter the elements of matrix B : ");  
+for(i = 0;i<n;i++)  
+{  
+for(j=0;j<m;j++)  
+{  
+scanf("%d",&b[i][j]);  
+}  
+}  
+  
+for(i = 0;i<n;i++)  
+{  
+for(j= 0;j<m;j++)  
+{  
+c[i][j] = a[i][j] + b[i][j];  
+printf("%d\n",c[i][j]);  
+}  
+}  
+return 0;  
+}  
+  
+#### OUTPUT:  
+enter the size of the matrix : 3  
+2  
+enter the elements of matrix A : 1  
+2  
+3  
+4  
+5  
+6  
+enter the elements of matrix B : 1  
+2                                 
+3  
+4  
+5  
+6  
+    
+2  
 
-10
+4  
 
-12 
+6  
 
-#### 19.WRITE A PROGRAM TO FIND TRANSPOSE OF A MATRIX.
-#include<stdio.h>
-int main()
-{
-int a[10][10],b[10][10],n,m,i,j;
-printf("enter the size of matrix A : ");
-scanf("%d %d",&m,&n);
-printf("enter the elements of matrix A row wise\n",m*n);
-for(i = 0;i < m;i++)
-{
-for(j = 0;j<m;j++)
-{
-scanf("%d",&a[i][j]);
-}
-}
-for(i = 0;i<m;i++)
-{
-for(j= 0;j<n;j++)
-{
-b[j][i] = a[i][j];
-}
-}
-printf("\ntranspose is \n ");
-for(i=0;i<n;i++)
-{
-for(j = 0;j<m;j++)
-{
-printf("%d\n",b[i][j]);
-}
-}
-return 0;
-}
+8  
 
-#### OUTPUT:
-enter the size of matrix A : 3
-3
-enter the elements of matrix A row wise
-1
-2
-3
-4
-5
-6
-7
-8
-9
+10  
 
-transpose is 
- 1
-4
-7
-2
-5
-8
-3
-6
-9
+12   
 
-#### 20.WRITE A PROGRAM TO FIND SUM OF DIGITS OF A NUMBER.
-#include<stdio.h>
-int main()
-{
-int num,temp;int sum=0,digit;
-printf("enter any integral number : ");
-scanf("%d",&num);
-temp = num ;
-while (temp > 0)
-{
-digit = temp % 10;
-temp = temp/10;
-sum = sum + digit;
-}
-printf("\n sum of digits of %d = %d\n",num,sum);
-return 0;
-}
+#### 19.WRITE A PROGRAM TO FIND TRANSPOSE OF A MATRIX.  
+#include<stdio.h>  
+int main()  
+{  
+int a[10][10],b[10][10],n,m,i,j;  
+printf("enter the size of matrix A : ");  
+scanf("%d %d",&m,&n);  
+printf("enter the elements of matrix A row wise\n",m*n);  
+for(i = 0;i < m;i++)  
+{  
+for(j = 0;j<m;j++)  
+{  
+scanf("%d",&a[i][j]);  
+}  
+}  
+for(i = 0;i<m;i++)  
+{  
+for(j= 0;j<n;j++)  
+{  
+b[j][i] = a[i][j];  
+}  
+}  
+printf("\ntranspose is \n ");  
+for(i=0;i<n;i++)  
+{  
+for(j = 0;j<m;j++)  
+{  
+printf("%d\n",b[i][j]);  
+}  
+}  
+return 0;  
+}  
 
-#### OUTPUT:
-enter any integral number : 145
-
- sum of digits of 145 = 10
- 
-#### 21.WRITE A PROGRAM TO CHECK WHETHER A NUMBER IS PALINDROME NUMBER OR NOT.
-#include<stdio.h>
-int main()
-{
-int a,num,r,p_n = 0;
-printf("enter atleast two digit integral number : ");
-scanf("%d",&a);
-num = a;
-while(num > 0)
-{
-r = num%10;
-p_n = p_n*10 + r;
-num =num/10;
-}
-if(a == p_n)
-{
+#### OUTPUT:  
+enter the size of matrix A : 3  
+3  
+enter the elements of matrix A row wise  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+  
+transpose is   
+ 1  
+4  
+7  
+2  
+5  
+8  
+3  
+6  
+9  
+  
+#### 20.WRITE A PROGRAM TO FIND SUM OF DIGITS OF A NUMBER.  
+#include<stdio.h>  
+int main()  
+{  
+int num,temp;int sum=0,digit;  
+printf("enter any integral number : ");  
+scanf("%d",&num);  
+temp = num ;  
+while (temp > 0)  
+{  
+digit = temp % 10;  
+temp = temp/10;  
+sum = sum + digit;  
+}  
+printf("\n sum of digits of %d = %d\n",num,sum);  
+return 0;  
+}  
+  
+#### OUTPUT:  
+enter any integral number : 145  
+  
+ sum of digits of 145 = 10  
+   
+#### 21.WRITE A PROGRAM TO CHECK WHETHER A NUMBER IS PALINDROME NUMBER OR NOT.  
+#include<stdio.h>  
+int main()  
+{  
+int a,num,r,p_n = 0;  
+printf("enter atleast two digit integral number : ");  
+scanf("%d",&a);  
+num = a;  
+while(num > 0)  
+{  
+r = num%10;  
+p_n = p_n*10 + r;  
+num =num/10;  
+}  
+if(a == p_n)  
+{  
 printf("%d is a pallindrome number.",a);  
-}
-else
-{
-printf("%d is not a pallindrome number.",a);
-}
-return 0;
-}
-
-#### OUTPUT:
-enter atleast two digit integral number : 14541
-14541 is a pallindrome number.
-
-#### 22.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY VALUE METHOD.
-
-
-#### OUTPUT:
+}  
+else  
+{  
+printf("%d is not a pallindrome number.",a);  
+}  
+return 0;  
+}  
+  
+#### OUTPUT:  
+enter atleast two digit integral number : 14541  
+14541 is a pallindrome number.  
+  
+#### 22.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY VALUE METHOD.  
 
 
-#### 23.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY REFERENCE METHOD.
+#### OUTPUT:  
 
 
-#### OUTPUT:
+#### 23.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY REFERENCE METHOD.  
 
 
-#### 24.WRITE A PROGRAM TO ENTER THE DETAILS OF EMPLOYEES USING STRUCTURE.
+#### OUTPUT:  
 
 
-#### OUTPUT:
+#### 24.WRITE A PROGRAM TO ENTER THE DETAILS OF EMPLOYEES USING STRUCTURE.  
 
 
-#### 25.WRITE A PROGRAM TO FIND THE PRODUCT OF FRACTIONS USING STRUCTURES.
-#include<stdio.h>
-struct fraction
-{
-int numerator;
-int denominator;
-};
-
-int main()
-{
-struct fraction f1,f2,rf;
-printf("enter numerator of the fraction1 : ");
-scanf("%d",&f1.numerator);
-printf("enter denominator of the fraction1 : ");
-scanf("%d",&f1.denominator);
-
-printf("enter numerator of the fraction2 : ");
-scanf("%d",&f2.numerator);
-printf("enter denominator of the fraction2 : ");
-scanf("%d",&f2.denominator);
-
-rf.numerator = f1.numerator*f2.numerator;
-rf.denominator = f1.denominator*f2.denominator;
-printf("resultant fraction : %d/%d\n",rf.numerator,rf.denominator);
-return 0;
-}
+#### OUTPUT:  
 
 
-#### OUTPUT:
-enter numerator of the fraction1 : 4
-enter denominator of the fraction1 : 2
-enter numerator of the fraction2 : 5
-enter denominator of the fraction2 : 3
-resultant fraction : 20/6
+#### 25.WRITE A PROGRAM TO FIND THE PRODUCT OF FRACTIONS USING STRUCTURES.  
+#include<stdio.h>  
+struct fraction  
+{  
+int numerator;  
+int denominator;  
+};  
+  
+int main()  
+{  
+struct fraction f1,f2,rf;  
+printf("enter numerator of the fraction1 : ");  
+scanf("%d",&f1.numerator);  
+printf("enter denominator of the fraction1 : ");  
+scanf("%d",&f1.denominator);  
+  
+printf("enter numerator of the fraction2 : ");  
+scanf("%d",&f2.numerator);  
+printf("enter denominator of the fraction2 : ");  
+scanf("%d",&f2.denominator);  
+  
+rf.numerator = f1.numerator*f2.numerator;  
+rf.denominator = f1.denominator*f2.denominator;  
+printf("resultant fraction : %d/%d\n",rf.numerator,rf.denominator);  
+return 0;  
+}  
+  
+
+#### OUTPUT:  
+enter numerator of the fraction1 : 4  
+enter denominator of the fraction1 : 2  
+enter numerator of the fraction2 : 5  
+enter denominator of the fraction2 : 3  
+resultant fraction : 20/6  
