@@ -195,3 +195,177 @@ _______________
 |    0      | * |  
 |___________|___|  
 
+#### 8.WRITE A PROGRAM FOR BUBBLE SORTING.  
+#include<stdio.h>  
+int main()  
+{  
+int n,i,k,temp;  
+printf("enter the size of the array : ");  
+scanf("%d",&n);  
+int a[n];  
+printf("enter the elements of the array : ");  
+for (i = 0;i<n;i++)  
+{  
+scanf("%d",&a[i]);  
+}  
+for(k=0;k<n-1;k++)  
+{  
+for(i=0;i<n-1-k;i++)  
+{  
+if(a[i] > a[i+1])//greater sign for ascending order....         
+{  
+temp = a[i];  
+a[i] = a[i+1];  
+a[i+1] = temp;  
+}  
+}  
+}  
+printf("\narray elements after sorting\n");  
+for(i = 0;i<n;i++)  
+{  
+printf("%d\n",a[i]);  
+}  
+return 0;  
+}  
+
+#### OUTPUT:  
+enter the size of the array : 5  
+enter the elements of the array : 22  
+56  
+13  
+33  
+87  
+
+array elements after sorting  
+13  
+22  
+33  
+56  
+87  
+
+#### 9. WRITE A PROGRAM FOR BINARY SEARCH.  
+#include<stdio.h>
+int main()
+{
+int a[25],i,m,n,first=0,last,mid;
+
+printf("Enter the size of the array : ");
+scanf("%d",&m);
+printf("Enter %d elements in ascending order: ");
+for(i=0 ; i<m ; i++)
+scanf("%d",&a[i]);
+
+printf("Enter value to find: ");
+scanf("%d",&n);
+
+last=n-1;    //To initialise to last index position
+mid=(first+last)/2;
+while(first<=last)
+{
+if(a[mid]<n)
+first=mid+1;
+else if(a[mid]==n)
+{
+printf("%d found at position #%d.\n");    //mid+1 done to display location & not index position
+break;
+}
+else
+last=mid-1;
+
+mid=(first+last)/2;
+}
+
+if(first>last)
+printf("%d not found in the entered array!\n",n);    //Test expression turned false, which means desired element wasn't found
+
+return 0;
+}
+
+#### 10.WRITE A PROGRAM TO FIND THE FACTORIAL OF THE NUMBER.
+#include<stdio.h>
+int main()
+{
+int i,a,factorial = 1;
+printf("enter a positive number for which you want factorial : ");
+scanf("%d",&a);
+for(i=a;i>=1;i--)
+{
+factorial = factorial * i;
+}
+printf("factorial of %d is %d\n",a,factorial);
+return 0;
+}
+
+#### OUTPUT:
+enter a positive number for which you want factorial : 4
+factorial of 4 is 24
+
+#### 11.WRITE A PROGRAM FOR FIZZ-BUZZ.
+#include <stdio.h>
+int main()
+{
+int a;
+printf("enter any number : ");
+scanf("%d",&a);
+if (a%15 == 0)
+{
+printf("fizz_buzz\n");
+}
+else
+if (a%3 == 0)
+{
+printf("fizz\n");
+}
+else 
+if (a%5 == 0)
+{
+printf("buzz\n");
+}                               
+else 
+{
+printf("%d\n",a);
+}
+return(0);
+} 
+#### OUTPUT:
+enter any number : 45
+fizz_buzz  
+
+#### 12.WRITE A PROGRAM TO FIND THE SUM OF FIRST 100 NUMBERS.
+#include <stdio.h>
+int main()
+{
+int i,sum = 0;
+for(i = 0;i <= 100;i = i+1)
+{
+sum = sum + i;
+}
+printf("sum of 1 to 100 numbers is %d\n",sum);
+return 0;
+}  
+
+#### OUTPUT:\
+sum of 1 to 100 numbers is 5050
+
+#### 13.WRITE A PROGRAM TO FIND THE GREATER OF TWO NUMBERS.
+#include <stdio.h>
+int main()
+{
+float a,b;
+printf("enter any two numbers : ");
+scanf("%f %f",&a,&b);
+if(a>b)
+{
+printf("%f is greater",a);
+}
+else 
+{
+printf("%.2f is greater\n",b);
+}
+return(0);
+}
+
+#### OUTPUT:
+enter any two numbers : 12.5
+33
+33.00 is greater
