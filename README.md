@@ -179,7 +179,7 @@ puts("|&nbsp; 4 &nbsp;|&nbsp; 5 &nbsp;|&nbsp; 6 &nbsp;|&nbsp; + &nbsp;|");
 puts("| ___ | ___ | ___ | ___ |");  
 puts("|&nbsp; 7 &nbsp;|&nbsp; 8 &nbsp;|&nbsp; 9 &nbsp;|&nbsp; - &nbsp;|");  
 puts("| ___ | ___ | ___ | ___ |");  
-puts("|&nbsp; &nbsp; &nbsp;&nbsp; 0 &nbsp;&nbsp; &nbsp; &nbsp;|&nbsp; * &nbsp;|");  
+puts("|&nbsp;    0   &nbsp;|&nbsp; * &nbsp;|");  
 }  
 
 #### OUTPUT:  
