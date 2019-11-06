@@ -173,13 +173,13 @@ int main()
 {  
 puts(" _______________ ");  
 puts("| _______________ |");  
-puts("| 1 | 2 | 3 |   |");  
-puts("| ___ |___|___|   |");  
-puts("| 4 | 5 | 6 | + |");  
-puts("|___|___|___|___|");  
-puts("| 7 | 8 | 9 | - |");  
-puts("|___|___|___|___|");  
-puts("|    0      | * |");  
+puts("| &nbsp; 1 &nbsp; |&nbsp; 2 &nbsp;| &nbsp;3 &nbsp;| &nbsp; &nbsp;|");  
+puts("| ___ | ___ | ___ | &nbsp; &nbsp;|");  
+puts("| &nbsp; 4 &nbsp;| &nbsp; 5 &nbsp; |&nbsp; 6 &nbsp;| &nbsp;+ &nbsp;|");  
+puts("| ___ | ___ | ___ | ___ |");  
+puts("| &nbsp;7 &nbsp;|&nbsp; 8 &nbsp;|&nbsp; 9 &nbsp;|&nbsp; - &nbsp;|");  
+puts("| ___ | ___ | ___ | ___ |");  
+puts("| &nbsp;&nbsp;&nbsp;&nbsp;   0      | * |");  
 puts("|___________|___|");  
 }  
 
