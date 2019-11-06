@@ -51,7 +51,7 @@ enter the numbers for which you want the average : 1
 4  
 5  
 average of the numbers is 3.00  
-
+  
 #### 3.WRITE A PROGRAM TO PRINT WEEKDAYS USING SWITCH STATEMENT.  
 #include<stdio.h>  
 int main()  
@@ -173,7 +173,7 @@ int main()
 {  
 puts(" _______________ ");  
 puts("| _______________ |");  
-puts("| &nbsp;1&nbsp;|&nbsp;2&nbsp;|&nbsp;3&nbsp;|&nbsp;&nbsp;&nbsp;|");  
+puts("| &nbsp; 1 &nbsp; |&nbsp;2&nbsp;|&nbsp;3&nbsp;|&nbsp;&nbsp;&nbsp;|");  
 puts("| ___ | ___ | ___ |&nbsp;&nbsp;&nbsp;|");  
 puts("|&nbsp;4&nbsp;|&nbsp;5&nbsp;|&nbsp;6&nbsp;|&nbsp;+&nbsp;|");  
 puts("| ___ | ___ | ___ | ___ |");  
@@ -211,7 +211,7 @@ for(k=0;k<n-1;k++)
 {  
 for(i=0;i<n-1-k;i++)  
 {  
-if(a[i] > a[i+1])//greater sign for ascending order....         
+if(a[i] > a[i+1])//greater sign for ascending order....           
 {  
 temp = a[i];  
 a[i] = a[i+1];  
@@ -241,130 +241,437 @@ array elements after sorting
 33  
 56  
 87  
-
+  
 #### 9. WRITE A PROGRAM FOR BINARY SEARCH.  
-#include<stdio.h>
-int main()
-{
-int a[25],i,m,n,first=0,last,mid;
-
-printf("Enter the size of the array : ");
-scanf("%d",&m);
-printf("Enter %d elements in ascending order: ");
-for(i=0 ; i<m ; i++)
-scanf("%d",&a[i]);
-
-printf("Enter value to find: ");
-scanf("%d",&n);
-
-last=n-1;    //To initialise to last index position
-mid=(first+last)/2;
-while(first<=last)
-{
-if(a[mid]<n)
-first=mid+1;
-else if(a[mid]==n)
-{
-printf("%d found at position #%d.\n");    //mid+1 done to display location & not index position
-break;
-}
-else
-last=mid-1;
-
-mid=(first+last)/2;
-}
-
-if(first>last)
-printf("%d not found in the entered array!\n",n);    //Test expression turned false, which means desired element wasn't found
-
-return 0;
-}
-
-#### 10.WRITE A PROGRAM TO FIND THE FACTORIAL OF THE NUMBER.
-#include<stdio.h>
-int main()
-{
-int i,a,factorial = 1;
-printf("enter a positive number for which you want factorial : ");
-scanf("%d",&a);
-for(i=a;i>=1;i--)
-{
-factorial = factorial * i;
-}
-printf("factorial of %d is %d\n",a,factorial);
-return 0;
-}
-
-#### OUTPUT:
-enter a positive number for which you want factorial : 4
-factorial of 4 is 24
-
-#### 11.WRITE A PROGRAM FOR FIZZ-BUZZ.
-#include <stdio.h>
-int main()
-{
-int a;
-printf("enter any number : ");
-scanf("%d",&a);
-if (a%15 == 0)
-{
-printf("fizz_buzz\n");
-}
-else
-if (a%3 == 0)
-{
-printf("fizz\n");
-}
-else 
-if (a%5 == 0)
-{
-printf("buzz\n");
-}                               
-else 
-{
-printf("%d\n",a);
-}
-return(0);
-} 
-#### OUTPUT:
-enter any number : 45
-fizz_buzz  
-
-#### 12.WRITE A PROGRAM TO FIND THE SUM OF FIRST 100 NUMBERS.
-#include <stdio.h>
-int main()
-{
-int i,sum = 0;
-for(i = 0;i <= 100;i = i+1)
-{
-sum = sum + i;
-}
-printf("sum of 1 to 100 numbers is %d\n",sum);
-return 0;
+#include<stdio.h>  
+int main()  
+{  
+int a[25],i,m,n,first=0,last,mid;  
+  
+printf("Enter the size of the array : ");  
+scanf("%d",&m);  
+printf("Enter %d elements in ascending order: ");  
+for(i=0 ; i<m ; i++)  
+scanf("%d",&a[i]);  
+  
+printf("Enter value to find: ");  
+scanf("%d",&n);  
+  
+last=n-1;    //To initialise to last index position  
+mid=(first+last)/2;  
+while(first<=last)  
+{  
+if(a[mid]<n)  
+first=mid+1;  
+else if(a[mid]==n)  
+{  
+printf("%d found at position #%d.\n");    //mid+1 done to display location & not index position  
+break;  
 }  
-
-#### OUTPUT:\
-sum of 1 to 100 numbers is 5050
-
-#### 13.WRITE A PROGRAM TO FIND THE GREATER OF TWO NUMBERS.
-#include <stdio.h>
+else  
+last=mid-1;  
+  
+mid=(first+last)/2;  
+}  
+  
+if(first>last)  
+printf("%d not found in the entered array!\n",n);    //Test expression turned false, which means desired element wasn't found  
+  
+return 0;  
+}  
+  
+#### 10.WRITE A PROGRAM TO FIND THE FACTORIAL OF THE NUMBER.  
+#include<stdio.h>  
+int main()  
+{  
+int i,a,factorial = 1;  
+printf("enter a positive number for which you want factorial : ");  
+scanf("%d",&a);  
+for(i=a;i>=1;i--)  
+{  
+factorial = factorial * i;  
+}  
+printf("factorial of %d is %d\n",a,factorial);  
+return 0;  
+}  
+  
+#### OUTPUT:  
+enter a positive number for which you want factorial : 4  
+factorial of 4 is 24  
+  
+#### 11.WRITE A PROGRAM FOR FIZZ-BUZZ.  
+#include <stdio.h>  
+int main()  
+{  
+int a;  
+printf("enter any number : ");  
+scanf("%d",&a);  
+if (a%15 == 0)  
+{  
+printf("fizz_buzz\n");  
+}  
+else  
+if (a%3 == 0)  
+{  
+printf("fizz\n");  
+}  
+else   
+if (a%5 == 0)  
+{  
+printf("buzz\n");  
+}                                 
+else   
+{  
+printf("%d\n",a);  
+}  
+return(0);  
+}  
+#### OUTPUT:  
+enter any number : 45  
+fizz_buzz  
+  
+#### 12.WRITE A PROGRAM TO FIND THE SUM OF FIRST 100 NUMBERS.  
+#include <stdio.h>  
+int main()  
+{  
+int i,sum = 0;  
+for(i = 0;i <= 100;i = i+1)  
+{  
+sum = sum + i;  
+}  
+printf("sum of 1 to 100 numbers is %d\n",sum);  
+return 0;  
+}  
+  
+#### OUTPUT:  
+sum of 1 to 100 numbers is 5050  
+  
+#### 13.WRITE A PROGRAM TO FIND THE GREATER OF TWO NUMBERS.  
+#include <stdio.h>  
+int main()  
+{  
+float a,b;  
+printf("enter any two numbers : ");  
+scanf("%f %f",&a,&b);  
+if(a>b)  
+{  
+printf("%.2f is greater",a);  
+}  
+else   
+{  
+printf("%.2f is greater\n",b);  
+}  
+return(0);  
+}  
+  
+#### OUTPUT:  
+enter any two numbers : 12.5  
+33  
+33.00 is greater  
+  
+#### 14. WRITE A PROGRAM TO FIND THE GREATER OF THREE NUMBERS.  
+#include<stdio.h>  
+int largest(int a,int b,int c)  
+{  
+if(a>b && a>c)  
+return(a);  
+else if(b>a && b>c)  
+return(b);  
+else  
+return(c);  
+}  
+int main()  
+{  
+int a,b,c;  
+printf("enter any three numbers : ");  
+scanf("%d %d %d",&a,&b,&c);  
+printf("largest of three numbers is : %d",largest(a,b,c));  
+return 0;  
+}  
+  
+#### OUTPUT:  
+enter any three numbers : 12  
+22  
+10  
+largest of three numbers is : 22  
+  
+#### 15.WRITE A PROGRAM TO FIND GCD OF NUMBERS.
+#include<stdio.h>
 int main()
 {
-float a,b;
-printf("enter any two numbers : ");
-scanf("%f %f",&a,&b);
-if(a>b)
+int x,y;
+printf("enter first integral number : ");
+scanf("%d",&x);
+printf("enter second integral number : ");
+scanf("%d",&y);
+if(y%x == 0)
+printf("gcd is %d\n",x);
+else
 {
-printf("%f is greater",a);
-}
-else 
+while(y%x != 0)
 {
-printf("%.2f is greater\n",b);
+x = y%x;
+y = x;
 }
-return(0);
+printf("gcd is %d\n",x);
+}
 }
 
 #### OUTPUT:
-enter any two numbers : 12.5
-33
-33.00 is greater
+enter first integral number : 12
+enter second integral number : 16
+gcd is 4
+
+#### 16.WRITE A PROGRAM TO FIND WHETHER THE YEAR IS A LEAP YEAR OR NOT.
+#include <stdio.h>
+int main()
+{
+int i;
+printf("enter any year : ");
+scanf("%d",&i);
+if (i%400 == 0)
+{
+printf("%d is leap year\n",i);
+}
+else 
+printf("%d is not leap year\n",i);
+return 0;
+}
+
+#### OUTPUT:
+enter any year : 2000
+2000 is leap year
+
+#### 17.WRITE A PROGRAM FOR LINEAR SEARCH.
+
+
+#### OUTPUT:
+
+
+#### 18.WRITE A PROGRAM FOR MATRIX ADDITION.
+#include<stdio.h>
+int main()
+{
+int a[10][10],b[10][10],c[10][10],n,m,i,j;
+printf("enter the size of the matrix : ");
+scanf("%d %d",&m,&n);
+
+printf("enter the elements of matrix A : ");
+for (i=0;i<n;i++)
+{
+for(j = 0;j<m;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+
+printf("enter the elements of matrix B : ");
+for(i = 0;i<n;i++)
+{
+for(j=0;j<m;j++)
+{
+scanf("%d",&b[i][j]);
+}
+}
+
+for(i = 0;i<n;i++)
+{
+for(j= 0;j<m;j++)
+{
+c[i][j] = a[i][j] + b[i][j];
+printf("%d\n",c[i][j]);
+}
+}
+return 0;
+}
+
+#### OUTPUT:
+enter the size of the matrix : 3
+2
+enter the elements of matrix A : 1
+2
+3
+4
+5
+6
+enter the elements of matrix B : 1
+2                               
+3
+4
+5
+6
+  
+2
+
+4
+
+6
+
+8
+
+10
+
+12 
+
+#### 19.WRITE A PROGRAM TO FIND TRANSPOSE OF A MATRIX.
+#include<stdio.h>
+int main()
+{
+int a[10][10],b[10][10],n,m,i,j;
+printf("enter the size of matrix A : ");
+scanf("%d %d",&m,&n);
+printf("enter the elements of matrix A row wise\n",m*n);
+for(i = 0;i < m;i++)
+{
+for(j = 0;j<m;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+for(i = 0;i<m;i++)
+{
+for(j= 0;j<n;j++)
+{
+b[j][i] = a[i][j];
+}
+}
+printf("\ntranspose is \n ");
+for(i=0;i<n;i++)
+{
+for(j = 0;j<m;j++)
+{
+printf("%d\n",b[i][j]);
+}
+}
+return 0;
+}
+
+#### OUTPUT:
+enter the size of matrix A : 3
+3
+enter the elements of matrix A row wise
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+transpose is 
+ 1
+4
+7
+2
+5
+8
+3
+6
+9
+
+#### 20.WRITE A PROGRAM TO FIND SUM OF DIGITS OF A NUMBER.
+#include<stdio.h>
+int main()
+{
+int num,temp;int sum=0,digit;
+printf("enter any integral number : ");
+scanf("%d",&num);
+temp = num ;
+while (temp > 0)
+{
+digit = temp % 10;
+temp = temp/10;
+sum = sum + digit;
+}
+printf("\n sum of digits of %d = %d\n",num,sum);
+return 0;
+}
+
+#### OUTPUT:
+enter any integral number : 145
+
+ sum of digits of 145 = 10
+ 
+#### 21.WRITE A PROGRAM TO CHECK WHETHER A NUMBER IS PALINDROME NUMBER OR NOT.
+#include<stdio.h>
+int main()
+{
+int a,num,r,p_n = 0;
+printf("enter atleast two digit integral number : ");
+scanf("%d",&a);
+num = a;
+while(num > 0)
+{
+r = num%10;
+p_n = p_n*10 + r;
+num =num/10;
+}
+if(a == p_n)
+{
+printf("%d is a pallindrome number.",a);  
+}
+else
+{
+printf("%d is not a pallindrome number.",a);
+}
+return 0;
+}
+
+#### OUTPUT:
+enter atleast two digit integral number : 14541
+14541 is a pallindrome number.
+
+#### 22.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY VALUE METHOD.
+
+
+#### OUTPUT:
+
+
+#### 23.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY REFERENCE METHOD.
+
+
+#### OUTPUT:
+
+
+#### 24.WRITE A PROGRAM TO ENTER THE DETAILS OF EMPLOYEES USING STRUCTURE.
+
+
+#### OUTPUT:
+
+
+#### 25.WRITE A PROGRAM TO FIND THE PRODUCT OF FRACTIONS USING STRUCTURES.
+#include<stdio.h>
+struct fraction
+{
+int numerator;
+int denominator;
+};
+
+int main()
+{
+struct fraction f1,f2,rf;
+printf("enter numerator of the fraction1 : ");
+scanf("%d",&f1.numerator);
+printf("enter denominator of the fraction1 : ");
+scanf("%d",&f1.denominator);
+
+printf("enter numerator of the fraction2 : ");
+scanf("%d",&f2.numerator);
+printf("enter denominator of the fraction2 : ");
+scanf("%d",&f2.denominator);
+
+rf.numerator = f1.numerator*f2.numerator;
+rf.denominator = f1.denominator*f2.denominator;
+printf("resultant fraction : %d/%d\n",rf.numerator,rf.denominator);
+return 0;
+}
+
+
+#### OUTPUT:
+enter numerator of the fraction1 : 4
+enter denominator of the fraction1 : 2
+enter numerator of the fraction2 : 5
+enter denominator of the fraction2 : 3
+resultant fraction : 20/6
