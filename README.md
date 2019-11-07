@@ -450,37 +450,45 @@ enter any year : 2000
 2000 is leap year  
   
 #### 17.WRITE A PROGRAM FOR LINEAR SEARCH.  
-#include<stdio.h>
-int main()
-{
-int i,m,a[25],n;
-
-printf("Enter the length of array: ");
-scanf("%d",&m);
-printf("Enter %d elements: ",m);
-for(i=0;i<m;i++)
-scanf("%d",&a[i]);
-printf("Enter the number you wish to find: ");
-scanf("%d",&n);
-
-for(i=0;i<m;i++)
-{
-if(a[i]==n)
-{
-printf("Search is successful. Element present at #%d\n",i+1);    //i+1 done to display location & not index position
-break;
-}
-}
-if(i==m)
-printf("Search is unsuccessful.\n");    //Test expression turned false, which means desired element wasn't found
-
-return 0;
-
-}
+#include<stdio.h>  
+int main()  
+{  
+int n,i,search;  
+printf("enter the size of the array : ");  
+scanf("%d",&n);  
+  
+int a[n];  
+printf("enter the elements of the array : ");  
+for(i=0;i<n;i++)  
+scanf("%d",&a[i]);  
+  
+printf("enter the number to search : ");  
+scanf("%d",&search);  
+  
+for(i=0;i<n;i++)  
+{  
+if(a[i]==search)  
+{  
+printf("search is successful...item found at position %d\n",i+1);  
+break;  
+}                                 
+}  
+if(i==n)  
+printf("search is unsuccessful\n");  
+  
+return 0;  
+}    
 
 #### OUTPUT:  
-
-
+enter the size of the array : 5  
+enter the elements of the array : 22  
+44  
+33  
+11  
+55  
+enter the number to search : 11  
+search is successful...item found at position 4  
+  
 #### 18.WRITE A PROGRAM FOR MATRIX ADDITION.  
 #include<stdio.h>  
 int main()  
@@ -657,17 +665,79 @@ enter atleast two digit integral number : 14541
 14541 is a pallindrome number.  
   
 #### 22.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY VALUE METHOD.  
+#include<stdio.h>  
+void swap(int a,int b)  
+{                                                                                    
+int temp;  
+printf("\ninside the function value of a = %d and value of b = %d before swap\n",a,b);    
+temp = a;  
+a = b;  
+b = temp;  
+printf("value of a = %d and value of b = %d",a,b);  
+}  
+int main()  
+{  
+int x,y;  
+printf("enter value for x : ");  
+scanf("%d",&x);  
+printf("enter value for y : ");  
+scanf("%d",&y);  
+printf("\nbefore calling swap function\n");  
+printf("value of x = %d, value of y = %d",x,y);  
+swap(x,y);  
+printf("\n after returning from swap function");  
+printf("\n value of x = %d and value of y = %d",x,y);  
+return 0;  
+}  
 
-
-#### OUTPUT:  
-
-
+#### OUTPUT:    
+enter value for x : 10  
+enter value for y : 12  
+  
+before calling swap function  
+value of x = 10, value of y = 12  
+inside the function value of a = 10 and value of b = 12 before swap  
+value of a = 12 and value of b = 10  
+ after returning from swap function  
+ value of x = 10 and value of y = 12  
+  
 #### 23.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY REFERENCE METHOD.  
-
+#include<stdio.h>  
+void swap(int*a,int*b)  
+{  
+int temp;  
+printf("\ninside the function value of *a = %d and value of *b = %d before swap\n",*a,*b);    
+temp = *a;  
+*a = *b;  
+*b = temp;  
+printf("after swap value of *a = %d and value of *b = %d",*a,*b);  
+}  
+int main()  
+{  
+int x,y;  
+printf("enter value for x : ");  
+scanf("%d",&x);  
+printf("enter value for y : ");  
+scanf("%d",&y);  
+printf("\nbefore calling swap function\n");  
+printf("value of x = %d, value of y = %d",x,y);  
+swap(&x,&y);  
+printf("\n after returning from swap function");  
+printf("\n value of x = %d and value of y = %d",x,y);  
+return 0;  
+}  
 
 #### OUTPUT:  
-
-
+enter value for x : 10  
+enter value for y : 12  
+  
+before calling swap function  
+value of x = 10, value of y = 12  
+inside the function value of *a = 10 and value of *b = 12 before swap  
+after swap value of *a = 12 and value of *b = 10  
+ after returning from swap function  
+ value of x = 12 and value of y = 10  
+  
 #### 24.WRITE A PROGRAM TO ENTER THE DETAILS OF EMPLOYEES USING STRUCTURE.  
 
 
