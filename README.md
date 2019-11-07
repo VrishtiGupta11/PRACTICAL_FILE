@@ -739,10 +739,41 @@ after swap value of *a = 12 and value of *b = 10
  value of x = 12 and value of y = 10  
   
 #### 24.WRITE A PROGRAM TO ENTER THE DETAILS OF EMPLOYEES USING STRUCTURE.  
-
+#include<stdio.h>  
+struct employee  
+{  
+char name[20];  
+int age;  
+char department[20];  
+float salary;  
+};  
+  
+int main()  
+{  
+struct employee aemployee;  
+printf("enter employee's name : ");  
+scanf("%s",&aemployee.name);  
+printf("enter employee's age : ");  
+scanf("%d",&aemployee.age);  
+printf("enter employee's department : ");  
+scanf("%s",&aemployee.department);  
+printf("enter employee's salary : ");  
+scanf("%f",&aemployee.salary);  
+printf("name is %s\n",aemployee.name);  
+printf("age is %d\n",aemployee.age);  
+printf("department is %s\n",aemployee.department);  
+printf("salary is %f\n",aemployee.salary);  
+return 0;                          
+}  
+                                                               
 
 #### OUTPUT:  
-
+enter employee's name : ram  
+enter employee's age : 21  
+enter employee's department : cse  
+enter employee's salary : 100000  
+name is ram  
+age is 21  
 
 #### 25.WRITE A PROGRAM TO FIND THE PRODUCT OF FRACTIONS USING STRUCTURES.  
 #include<stdio.h>  
