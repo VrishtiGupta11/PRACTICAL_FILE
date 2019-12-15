@@ -417,8 +417,8 @@ else
 {  
 while(y%x != 0)  
 {  
-x = y%x;  
-y = x;  
+y = x;    
+x = y%x;    
 }  
 printf("gcd is %d\n",x);  
 }  
