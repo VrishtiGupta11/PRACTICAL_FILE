@@ -406,22 +406,21 @@ largest of three numbers is : 22
 #include<stdio.h>  
 int main()  
 {  
-int x,y;  
-printf("enter first integral number : ");  
-scanf("%d",&x);  
-printf("enter second integral number : ");  
+int y,x,r;  
+printf("enter the value of y : ");  
 scanf("%d",&y);  
-if(y%x == 0)  
-printf("gcd is %d\n",x);  
-else  
+printf("enter the value of x : ");  
+scanf("%d",&x);  
+r = y%x;  
+while(r != 0)  
 {  
-while(y%x != 0)  
-{  
-y = x;    
-x = y%x;    
+y = x;  
+x = r;  
+r = y%x;  
 }  
+if(r == 0)  
 printf("gcd is %d\n",x);  
-}  
+return 0;  
 }  
   
 #### OUTPUT:  
