@@ -812,25 +812,25 @@ resultant fraction : 20/6
  _X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_ 
 
 
-#### Write a program to calculate the sum of the five digits on n.
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
-
-int main() {
+#### Write a program to calculate the sum of the five digits on n.  
+#include <stdio.h>  
+#include <string.h>  
+#include <math.h>  
+#include <stdlib.h>  
+  
+int main() {  
 	
-    int n;
-    scanf("%d", &n);
-    //Complete the code to calculate the sum of the five digits on n.
-    int sum = 0;
-    int temp = n;
-    while(temp>0)
-    {
-        int r = temp%10;
-        sum = sum + r;
-        temp = temp/10;
-    }
-    printf("%d",sum);
-    return 0;
-}
+    int n;  
+    scanf("%d", &n);  
+    //Complete the code to calculate the sum of the five digits on n.  
+    int sum = 0;  
+    int temp = n;  
+    while(temp>0)  
+    {  
+        int r = temp%10;  
+        sum = sum + r;  
+        temp = temp/10;  
+    }  
+    printf("%d",sum);  
+    return 0;  
+}  
