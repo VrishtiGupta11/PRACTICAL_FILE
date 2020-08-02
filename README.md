@@ -836,7 +836,7 @@ int main(){
 }  
 
 
-#### Write a program to print the pattern.
+#### Write a program to print the pattern from 1 to n.
  4 4 4 4 4 4 4  
  4 3 3 3 3 3 4   
  4 3 2 2 2 3 4   
