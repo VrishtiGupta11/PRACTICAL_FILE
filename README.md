@@ -834,3 +834,40 @@ int main(){
     printf("%d",sum);  
     return 0;  
 }  
+
+
+#### Write a program to print the pattern.
+ 4 4 4 4 4 4 4  
+ 4 3 3 3 3 3 4   
+ 4 3 2 2 2 3 4   
+ 4 3 2 1 2 3 4   
+ 4 3 2 2 2 3 4   
+ 4 3 3 3 3 3 4   
+ 4 4 4 4 4 4 4   
+ 
+#include <stdio.h>  
+#include <string.h>  
+#include <math.h>  
+#include <stdlib.h>  
+
+int main()  
+{
+
+    int n,i,j,m,l;
+    scanf("%d", &n);
+    l= 2*n - 1;
+  	// Complete the code to print the pattern.
+    for(i=0; i<l;i++ )  
+    {
+        for(j=0;j<l;j++)
+        {
+            m = (i<j)?i:j;
+            m = m<l-i-1 ? m : l-i-1;
+            m = m<l-j-1 ? m : l-j-1;
+            printf("%d ",n-m);
+        }
+        printf("\n");
+
+    }
+    return 0;
+}  
