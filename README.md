@@ -812,7 +812,7 @@ resultant fraction : 20/6
  _X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_ 
 
 
-#### Write a program to calculate the sum of the five digits on n.  
+#### 1.Write a program to calculate the sum of the five digits on n.  
 #include <stdio.h>  
 #include <string.h>  
 #include <math.h>  
@@ -836,7 +836,7 @@ int main(){
 }  
 
 
-#### Write a program to print the pattern from 1 to n.
+#### 2.Write a program to print the pattern from 1 to n.
  4 4 4 4 4 4 4  
  4 3 3 3 3 3 4   
  4 3 2 2 2 3 4   
@@ -871,3 +871,27 @@ int main()
     }
     return 0;
 }  
+
+
+#### 3.In this challenge, you have to create an array of size n dynamically, input the elements of the array, sum them and print the sum of the elements in a new line.
+
+#include <stdio.h>  
+#include <string.h>  
+#include <math.h>  
+#include <stdlib.h>  
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n, *ptr,sum=0;
+    scanf("%d",&n);
+    ptr = malloc(n*sizeof(int));
+    for(int i = 0;i<n;i++)
+    {
+        scanf("%d",&ptr[i]);
+        sum = sum+ptr[i];
+    }
+    printf("%d",sum);
+    free(ptr);
+    return 0;
+}
