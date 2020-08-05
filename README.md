@@ -925,3 +925,71 @@ int main()
         printf("%d ", *(arr + i));
     return 0;
 }
+
+
+#### 5.Given a sentence,s , print each word of the sentence in a new line.  
+
+#include <stdio.h>  
+#include <string.h>  
+#include <math.h>  
+#include <stdlib.h>  
+
+int main() {
+
+    char *s;
+    s = malloc(1024 * sizeof(char));
+    scanf("%[^\n]", s);
+    s = realloc(s, strlen(s) + 1);
+    //Write your logic to print the tokens of the sentence here.
+    int i=0;
+    while(s[i] != '\0')
+    {
+        if(s[i] == ' ')
+            printf("\n");
+        else
+            printf("%c",s[i]);
+        i++;
+    }
+    return 0;
+}
+
+
+
+#### 6.There is a series,S , where the next term is the sum of pervious three terms. Given the first three terms of the series,a ,b , and c respectively, you have to output the nth term of the series using recursion.  
+
+#include <stdio.h>  
+#include <string.h>  
+#include <math.h>  
+#include <stdlib.h>  
+//Complete the following function.  
+
+int find_nth_term(int n, int a, int b, int c) {  
+
+  if(n==1)  
+  {  
+      return a;  
+  }  
+  else if(n==2)  
+  {  
+      return b;  
+  }  
+  else if(n==3)  
+  {  
+      return c;  
+  }  
+  else  
+  {  
+      return(find_nth_term(n-1,a,b,c) + find_nth_term(n-2,a,b,c) + find_nth_term(n-3,a,b,c));  
+  }  
+}  
+
+int main() {
+
+    int n, a, b, c;
+  
+    scanf("%d %d %d %d", &n, &a, &b, &c);
+    int ans = find_nth_term(n, a, b, c);
+ 
+    printf("%d", ans); 
+    return 0;
+}
