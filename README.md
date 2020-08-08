@@ -997,12 +997,12 @@ int main() {
 
 #### 7.Given a string,s , consisting of alphabets and digits, find the frequency of each digit in the given string.Print ten space-separated integers in a single line denoting the frequency of each digit from 0 to 9.
 
-## input: a11472o5t6
+#### input: a11472o5t6
 
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
+#include <stdio.h>  
+#include <string.h>  
+#include <math.h>  
+#include <stdlib.h>  
 
 int main() {
 
@@ -1031,5 +1031,5 @@ int main() {
     return 0;
 }
 
-## output : 0 2 1 0 1 1 1 1 0 0 
+#### output : 0 2 1 0 1 1 1 1 0 0 
 
