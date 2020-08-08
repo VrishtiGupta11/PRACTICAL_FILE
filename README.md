@@ -993,3 +993,43 @@ int main() {
     printf("%d", ans); 
     return 0;
 }
+
+
+#### 7.Given a string,s , consisting of alphabets and digits, find the frequency of each digit in the given string.Print ten space-separated integers in a single line denoting the frequency of each digit from 0 to 9.
+
+## input: a11472o5t6
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    char num[1001];
+    char freq[10];
+    int i,len;
+    scanf("%s",num);
+    len = strlen(num);
+    for(i=0;i<10;i++)
+    {
+        freq[i] = 0;
+    }
+    for(i=0;i<len;i++)
+    {
+        int digit = num[i] - '0';
+        if(digit>=0 && digit<=9)
+        {
+            freq[digit]++;
+        }
+    }
+    for(i=0;i<10;i++)
+    {
+        printf("%d ",freq[i]);
+    }
+    return 0;
+}
+
+## output : 0 2 1 0 1 1 1 1 0 0 
+
