@@ -174,35 +174,35 @@ enter non negative integral number : 153
 153 is an armstrong number  
 
 #### 7.WRITE A PROGRAM TO PRINT CALCULATOR USING PUTS.  
-	#include <stdio.h>  
-	int main()  
-	{
+#include <stdio.h>  
+int main()  
+{
 
-		puts(" _______________ ");  
-		puts("| _______________ |");  
-		puts("|&nbsp; 1 &nbsp;|&nbsp; 2 &nbsp;|&nbsp; 3 &nbsp;|&nbsp; &nbsp; &nbsp;|");  
-		puts("| ___ | ___ | ___ |&nbsp; &nbsp; &nbsp;|");  
-		puts("|&nbsp; 4 &nbsp;|&nbsp; 5 &nbsp;|&nbsp; 6 &nbsp;|&nbsp; + &nbsp;|");  
-		puts("| ___ | ___ | ___ | ___ |");  
-		puts("|&nbsp; 7 &nbsp;|&nbsp; 8 &nbsp;|&nbsp; 9 &nbsp;|&nbsp; - &nbsp;|");  
-			puts("| ___ | ___ | ___ | ___ |");  
-			puts("|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;  *  &nbsp;|");  
-		}  
+puts(" _______________ ");  
+puts("| _______________ |");  
+puts("|&nbsp; 1 &nbsp;|&nbsp; 2 &nbsp;|&nbsp; 3 &nbsp;|&nbsp; &nbsp; &nbsp;|");  
+puts("| ___ | ___ | ___ |&nbsp; &nbsp; &nbsp;|");  
+puts("|&nbsp; 4 &nbsp;|&nbsp; 5 &nbsp;|&nbsp; 6 &nbsp;|&nbsp; + &nbsp;|");  
+puts("| ___ | ___ | ___ | ___ |");  
+puts("|&nbsp; 7 &nbsp;|&nbsp; 8 &nbsp;|&nbsp; 9 &nbsp;|&nbsp; - &nbsp;|");  
+puts("| ___ | ___ | ___ | ___ |");  
+puts("|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;  *  &nbsp;|");  
+}  
 
-	#### OUTPUT:  
+#### OUTPUT:  
 
-	| _______________ |  
-	| _______________ |  
-	|&nbsp; 1 &nbsp;|&nbsp; 2 &nbsp;|&nbsp; 3 &nbsp;|&nbsp; &nbsp; &nbsp;|  
-	| ___ | ___ | ___ |&nbsp; &nbsp; &nbsp;|  
-	|&nbsp; 4 &nbsp;|&nbsp; 5 &nbsp;|&nbsp; 6 &nbsp;|&nbsp; + &nbsp;  
-	| ___ | ___ | ___ | ___ |  
-	|&nbsp; 7 &nbsp;|&nbsp; 8 &nbsp;|&nbsp; 9 &nbsp;|&nbsp; - &nbsp;  
-	| ___ | ___ | ___ | ___ |  
-	|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;  *  &nbsp;|
+| _______________ |  
+| _______________ |  
+|&nbsp; 1 &nbsp;|&nbsp; 2 &nbsp;|&nbsp; 3 &nbsp;|&nbsp; &nbsp; &nbsp;|  
+| ___ | ___ | ___ |&nbsp; &nbsp; &nbsp;|  
+|&nbsp; 4 &nbsp;|&nbsp; 5 &nbsp;|&nbsp; 6 &nbsp;|&nbsp; + &nbsp;  
+| ___ | ___ | ___ | ___ |  
+|&nbsp; 7 &nbsp;|&nbsp; 8 &nbsp;|&nbsp; 9 &nbsp;|&nbsp; - &nbsp;  
+| ___ | ___ | ___ | ___ |  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;  *  &nbsp;|
 
 
-	#### 8.WRITE A PROGRAM FOR BUBBLE SORTING.  
+#### 8.WRITE A PROGRAM FOR BUBBLE SORTING.  
 		#include<stdio.h>  
 		int main()  
 		{
@@ -251,7 +251,7 @@ array elements after sorting
 	56  
 	87  
 
-	#### 9. WRITE A PROGRAM FOR BINARY SEARCH.  
+#### 9. WRITE A PROGRAM FOR BINARY SEARCH.  
 		#include<stdio.h>  
 		int main()  
 		{
@@ -286,13 +286,13 @@ array elements after sorting
 			return 0;  
 		}  
 
-	#### OUTPUT:  
-	enter number of elements to be entered : 5  
-	enter the elements in ascending order : 1  
-	2  
-	3  
-	4  
-	5  
+#### OUTPUT:  
+enter number of elements to be entered : 5  
+enter the elements in ascending order : 1  
+2  
+3  
+4  
+5  
 enter the element to be searched : 4  
 search is successful at position 3  
   
@@ -316,7 +316,7 @@ search is successful at position 3
 enter a positive number for which you want factorial : 4  
 factorial of 4 is 24  
 
-	#### 11.WRITE A PROGRAM FOR FIZZ-BUZZ.  
+#### 11.WRITE A PROGRAM FOR FIZZ-BUZZ.  
 		#include <stdio.h>  
 		int main()  
 		{
@@ -344,11 +344,11 @@ factorial of 4 is 24
 			}  
 			return(0);  
 		}  
-	#### OUTPUT:  
-	enter any number : 45  
-	fizz_buzz  
+#### OUTPUT:  
+enter any number : 45  
+fizz_buzz  
 
-	#### 12.WRITE A PROGRAM TO FIND THE SUM OF FIRST 100 NUMBERS.  
+#### 12.WRITE A PROGRAM TO FIND THE SUM OF FIRST 100 NUMBERS.  
 		#include <stdio.h>  
 		int main()  
 		{
@@ -384,10 +384,10 @@ sum of 1 to 100 numbers is 5050
 			return(0);  
 		}  
 
-	#### OUTPUT:  
-	enter any two numbers : 12.5  
-	33  
-	33.00 is greater  
+#### OUTPUT:  
+enter any two numbers : 12.5  
+33  
+33.00 is greater  
   
 #### 14. WRITE A PROGRAM TO FIND THE GREATER OF THREE NUMBERS.  
 	#include<stdio.h>  
@@ -415,9 +415,9 @@ sum of 1 to 100 numbers is 5050
 enter any three numbers : 12  
 22  
 10  
-	largest of three numbers is : 22  
+largest of three numbers is : 22  
 
-	#### 15.WRITE A PROGRAM TO FIND GCD OF NUMBERS.  
+#### 15.WRITE A PROGRAM TO FIND GCD OF NUMBERS.  
 		#include<stdio.h>  
 		int main()  
 		{
@@ -439,10 +439,10 @@ enter any three numbers : 12
 			return 0;  
 		}  
 
-	#### OUTPUT:  
-	enter first integral number : 12  
-	enter second integral number : 16  
-	gcd is 4  
+#### OUTPUT:  
+enter first integral number : 12  
+enter second integral number : 16  
+gcd is 4  
 
 #### 16.WRITE A PROGRAM TO FIND WHETHER THE YEAR IS A LEAP YEAR OR NOT.  
 	#include <stdio.h>  
@@ -544,18 +544,18 @@ search is successful...item found at position 4
 			return 0;  
 		}  
 
-	#### OUTPUT:  
-	enter the size of the matrix : 3  
-	2  
-	enter the elements of matrix A : 1  
-	2  
-	3  
-	4  
-	5  
-	6  
-	enter the elements of matrix B : 1  
-	2                                 
-	3  
+#### OUTPUT:  
+enter the size of the matrix : 3  
+2  
+enter the elements of matrix A : 1  
+2  
+3  
+4  
+5  
+6  
+enter the elements of matrix B : 1  
+2                                 
+3  
 4  
 5  
 6  
@@ -607,29 +607,29 @@ search is successful...item found at position 4
 		return 0;  
 	}  
 
-	#### OUTPUT:  
-	enter the size of matrix A : 3  
-	3  
-	enter the elements of matrix A row wise  
-	1  
-	2  
-	3  
-	4  
-	5  
-	6  
-	7  
-	8  
-	9  
+#### OUTPUT:  
+enter the size of matrix A : 3  
+3  
+enter the elements of matrix A row wise  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
 
-	transpose is   
-	 1  
-	4  
-	7  
-	2  
-	5  
-	8  
-	3  
-	6  
+transpose is   
+ 1  
+4  
+7  
+2  
+5  
+8  
+3  
+6  
 9  
   
 #### 20.WRITE A PROGRAM TO FIND SUM OF DIGITS OF A NUMBER.  
@@ -651,12 +651,12 @@ search is successful...item found at position 4
 			return 0;  
 		}  
 
-	#### OUTPUT:  
-	enter any integral number : 145  
+#### OUTPUT:  
+enter any integral number : 145  
 
-	 sum of digits of 145 = 10  
+ sum of digits of 145 = 10  
 
-	#### 21.WRITE A PROGRAM TO CHECK WHETHER A NUMBER IS PALINDROME NUMBER OR NOT.  
+#### 21.WRITE A PROGRAM TO CHECK WHETHER A NUMBER IS PALINDROME NUMBER OR NOT.  
 		#include<stdio.h>  
 		int main()  
 		{
@@ -682,11 +682,11 @@ search is successful...item found at position 4
 			return 0;  
 		}  
 
-	#### OUTPUT:  
-	enter atleast two digit integral number : 14541  
-	14541 is a pallindrome number.  
+#### OUTPUT:  
+enter atleast two digit integral number : 14541  
+14541 is a pallindrome number.  
 
-	#### 22.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY VALUE METHOD.  
+#### 22.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY VALUE METHOD.  
 		#include<stdio.h>  
 		void swap(int a,int b)  
 		{
@@ -714,18 +714,18 @@ search is successful...item found at position 4
 		return 0;  
 	}  
 
-	#### OUTPUT:    
-	enter value for x : 10  
-	enter value for y : 12  
+#### OUTPUT:    
+enter value for x : 10  
+enter value for y : 12  
 
-	before calling swap function  
-	value of x = 10, value of y = 12  
-	inside the function value of a = 10 and value of b = 12 before swap  
-	value of a = 12 and value of b = 10  
-	 after returning from swap function  
-	 value of x = 10 and value of y = 12  
+before calling swap function  
+value of x = 10, value of y = 12  
+inside the function value of a = 10 and value of b = 12 before swap  
+value of a = 12 and value of b = 10  
+ after returning from swap function  
+ value of x = 10 and value of y = 12  
 
-	#### 23.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY REFERENCE METHOD.  
+#### 23.WRITE A PROGRAM TO SWAP TWO NUMBERS USING CALL BY REFERENCE METHOD.  
 		#include<stdio.h>  
 		void swap(int*a,int*b)  
 		{
@@ -753,18 +753,18 @@ search is successful...item found at position 4
 		return 0;  
 	}  
 
-	#### OUTPUT:  
-	enter value for x : 10  
-	enter value for y : 12  
+#### OUTPUT:  
+enter value for x : 10  
+enter value for y : 12  
 
-	before calling swap function  
-	value of x = 10, value of y = 12  
-	inside the function value of *a = 10 and value of *b = 12 before swap  
-	after swap value of *a = 12 and value of *b = 10  
-	 after returning from swap function  
-	 value of x = 12 and value of y = 10  
+before calling swap function  
+value of x = 10, value of y = 12  
+inside the function value of *a = 10 and value of *b = 12 before swap  
+after swap value of *a = 12 and value of *b = 10  
+ after returning from swap function  
+ value of x = 12 and value of y = 10  
 
-	#### 24.WRITE A PROGRAM TO ENTER THE DETAILS OF EMPLOYEES USING STRUCTURE.  
+#### 24.WRITE A PROGRAM TO ENTER THE DETAILS OF EMPLOYEES USING STRUCTURE.  
 		#include<stdio.h>  
 		struct employee  
 		{
@@ -795,15 +795,15 @@ search is successful...item found at position 4
 	}  
                                                                
 
-	#### OUTPUT:  
-	enter employee's name : ram  
-	enter employee's age : 21  
-	enter employee's department : cse  
-	enter employee's salary : 100000  
-	name is ram  
-	age is 21  
+#### OUTPUT:  
+enter employee's name : ram  
+enter employee's age : 21  
+enter employee's department : cse  
+enter employee's salary : 100000  
+name is ram  
+age is 21  
 
-	#### 25.WRITE A PROGRAM TO FIND THE PRODUCT OF FRACTIONS USING STRUCTURES.  
+#### 25.WRITE A PROGRAM TO FIND THE PRODUCT OF FRACTIONS USING STRUCTURES.  
 		#include<stdio.h>  
 		struct fraction  
 		{  
@@ -834,17 +834,17 @@ search is successful...item found at position 4
 		}  
 
 
-	#### OUTPUT:  
-	enter numerator of the fraction1 : 4  
-	enter denominator of the fraction1 : 2  
-	enter numerator of the fraction2 : 5  
-	enter denominator of the fraction2 : 3  
-	resultant fraction : 20/6  
+#### OUTPUT:  
+enter numerator of the fraction1 : 4  
+enter denominator of the fraction1 : 2  
+enter numerator of the fraction2 : 5  
+enter denominator of the fraction2 : 3  
+resultant fraction : 20/6  
 
-	 _X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_ 
+ _X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_X_ 
 
 
-	#### 1.Write a program to calculate the sum of the five digits on n.  
+#### 1.Write a program to calculate the sum of the five digits on n.  
 		#include <stdio.h>  
 		#include <string.h>  
 		#include <math.h>  
@@ -868,14 +868,14 @@ search is successful...item found at position 4
 		}  
 
 
-	#### 2.Write a program to print the pattern from 1 to n.
-	 4 4 4 4 4 4 4  
-	 4 3 3 3 3 3 4   
-	 4 3 2 2 2 3 4   
-	 4 3 2 1 2 3 4   
-	 4 3 2 2 2 3 4   
-	 4 3 3 3 3 3 4   
-	 4 4 4 4 4 4 4   
+#### 2.Write a program to print the pattern from 1 to n.
+ 4 4 4 4 4 4 4  
+ 4 3 3 3 3 3 4   
+ 4 3 2 2 2 3 4   
+ 4 3 2 1 2 3 4   
+ 4 3 2 2 2 3 4   
+ 4 3 3 3 3 3 4   
+ 4 4 4 4 4 4 4   
  
 	#include <stdio.h>  
 	#include <string.h>  
@@ -905,7 +905,7 @@ search is successful...item found at position 4
 		}  
 
 
-	#### 3.In this challenge, you have to create an array of size n dynamically, input the elements of the array, sum them and print the sum of the elements in a new line.
+#### 3.In this challenge, you have to create an array of size n dynamically, input the elements of the array, sum them and print the sum of the elements in a new line.
 
 	#include <stdio.h>  
 	#include <string.h>  
@@ -928,7 +928,7 @@ search is successful...item found at position 4
 		    return 0;
 		}
 
-	#### 4.Given an array, of size n, reverse it.
+#### 4.Given an array, of size n, reverse it.
 
 		#include <stdio.h>  
 		#include <stdlib.h>  
@@ -959,7 +959,7 @@ search is successful...item found at position 4
 		}
 
 
-	#### 5.Given a sentence,s , print each word of the sentence in a new line.  
+#### 5.Given a sentence,s , print each word of the sentence in a new line.  
 
 		#include <stdio.h>  
 		#include <string.h>  
@@ -987,7 +987,7 @@ search is successful...item found at position 4
 
 
 
-	#### 6.There is a series,S , where the next term is the sum of pervious three terms. Given the first three terms of the series,a ,b , and c respectively, you have to output the nth term of the series using recursion.  
+#### 6.There is a series,S , where the next term is the sum of pervious three terms. Given the first three terms of the series,a ,b , and c respectively, you have to output the nth term of the series using recursion.  
 
 		#include <stdio.h>  
 		#include <string.h>  
@@ -1028,9 +1028,9 @@ search is successful...item found at position 4
 		}
 
 
-	#### 7.Given a string,s , consisting of alphabets and digits, find the frequency of each digit in the given string.Print ten space-separated integers in a single line denoting the frequency of each digit from 0 to 9.
+#### 7.Given a string,s , consisting of alphabets and digits, find the frequency of each digit in the given string.Print ten space-separated integers in a single line denoting the frequency of each digit from 0 to 9.
 
-	#### input: a11472o5t6
+#### input: a11472o5t6
 
 		#include <stdio.h>  
 		#include <string.h>  
